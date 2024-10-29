@@ -1,0 +1,13 @@
+.custom-input{
+    height: 48px;
+    width: 240px;
+    border-radius: 12px;
+    margin: 0 20px 0 0;
+}
+
+.custom-input::placeholder{
+    color: $text-grey;
+    padding: 0 0 0 20px;
+    font-size: 1em;
+    font-weight: 400;
+}
