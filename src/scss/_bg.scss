@@ -1,11 +1,24 @@
-.dark-bg{
-    background-color: $dark;
+.dark-bg {
+  background-color: $dark;
 }
 
-.primary-bg{
-    background-color: $primary;
+.garis-bg {
+  background-image: url("/src/assets/icons/garis-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.grey-bg{
-    background-color: $grey;
+.primary-bg {
+  background-color: $primary;
+}
+
+.grey-bg {
+  background-color: $grey;
+}
+
+.hr-line {
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background-color: $text-grey;
 }

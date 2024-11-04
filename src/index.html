@@ -189,11 +189,13 @@
           </button>
         </div>
 
-        <img
-          src="./assets/icons/hero-img.svg"
-          class="img-fluid p-0 m-0"
-          alt="hero-img"
-        />
+        <div class="d-flex">
+          <img
+            src="./assets/icons/hero-img.svg"
+            class="img-fluid p-0 m-0"
+            alt="hero-img"
+          />
+        </div>
       </div>
     </div>
 
@@ -213,6 +215,7 @@
       <div class="d-flex flex-row justify-content-center mt-4">
         <div class="d-flex flex-column me-4">
           <svg
+            class="img-fluid"
             width="224"
             height="224"
             viewBox="0 0 224 224"
@@ -257,6 +260,7 @@
 
         <div class="d-flex flex-column ms-4 me-4">
           <svg
+            class="img-fluid"
             width="224"
             height="224"
             viewBox="0 0 224 224"
@@ -289,6 +293,7 @@
 
         <div class="d-flex flex-column ms-4 me-4">
           <svg
+            class="img-fluid"
             width="224"
             height="224"
             viewBox="0 0 224 224"
@@ -325,6 +330,7 @@
 
         <div class="d-flex flex-column ms-4">
           <svg
+            class="img-fluid"
             width="224"
             height="224"
             viewBox="0 0 224 224"
@@ -368,14 +374,19 @@
         ullamcorper mattis, pulvinar dapibus leo.
       </p>
 
-      <div class="d-flex flex-row justify-content-center align-items-center">
-        <img
-          class="img-fluid p-0 m-0"
+      <div class="d-flex flex-row b-margin justify-content-center align-items-center">
+
+        <div class="d-flex">
+          <img
           src="assets/icons/hero-img.svg"
+          class="img-fluid p-0 m-0"
           alt="hero-img-2"
         />
+        </div>
+        
 
         <div class="d-flex flex-column me-4">
+
           <div class="d-flex flex-row mb-3">
             <svg
               class="me-3 mt-3 justify-content-center"
@@ -953,7 +964,9 @@
     </div>
 
     <div class="d-flex flex-column t-margin">
-      <div class="d-flex flex-column b-margin dark-bg area-card-container">
+      <div
+        class="d-flex flex-column b-margin dark-bg garis-bg area-card-container"
+      >
         <div class="d-flex flex-column area-card-body">
           <p class="title-s secondary-text text-center">SERVICE AREA</p>
           <p class="title text-white text-center mt-2">
@@ -1042,43 +1055,43 @@
 
             <h4 class="text-white title ms-3" href="#">B C N</h4>
           </div>
-          <p class="subtitle text-white">
+          <p class="subtitle text-white mt-4">
             123 Anywhere Street, <br />Somewhere.
           </p>
-          <a class="link text-white">012-3456-7890 </a>
-          <a class="link text-white">support@tokotema.com</a>
+          <a class="link text-white" href="#">012-3456-7890 </a>
+          <a class="link text-white" href="#">support@tokotema.com</a>
         </div>
         <div class="d-flex flex-column">
           <h4 class="text-white title-s-bold" href="#">Quick Link</h4>
-          <p class="subtitle text-white">Home</p>
+          <a class="subtitle text-white mt-4" href="#">Home</a>
 
-          <p class="subtitle text-white">About Us</p>
+          <a class="subtitle text-white" href="#">About Us</a>
 
-          <p class="subtitle text-white">Services</p>
+          <a class="subtitle text-white" href="#">Services</a>
 
-          <p class="subtitle text-white">Contact Us</p>
+          <a class="subtitle text-white" href="#">Contact Us</a>
 
-          <p class="subtitle text-white">Blog</p>
+          <a class="subtitle text-white" href="#">Blog</a>
         </div>
         <div class="d-flex flex-column">
           <h4 class="text-white title-s-bold" href="#">Company</h4>
-          <p class="subtitle text-white">Our Story</p>
+          <a class="subtitle text-white mt-4" href="#">Our Story</a>
 
-          <p class="subtitle text-white">Team</p>
+          <a class="subtitle text-white" href="#">Team</a>
 
-          <p class="subtitle text-white">Term Of Service</p>
+          <a class="subtitle text-white" href="#">Term Of Service</a>
 
-          <p class="subtitle text-white">Support Faq</p>
+          <a class="subtitle text-white" href="#">Support Faq</a>
 
-          <p class="subtitle text-white">Faq</p>
+          <a class="subtitle text-white" href="#">Faq</a>
         </div>
 
         <div class="d-flex flex-column">
-          <h4 class="text-white title-s-bold" href="#">Keep In Touch</h4>
+          <h4 class="text-white title-s-bold">Keep In Touch</h4>
           <div class="d-flex flex-row justify-content-center mt-4">
             <input
               class="custom-input"
-              placeholder="Email"
+              placeholder="Email address"
               aria-label="Email"
               aria-describedby="basic-addon1"
             />
@@ -1148,6 +1161,16 @@
               />
             </svg>
           </div>
+        </div>
+      </div>
+      <div class="hr-line t-margin"></div>
+      <div class="d-flex flex-column b-margin">
+        <div class="d-flex flex-row mt-4">
+          <p class="subtitle text-white align-items-start">
+            Copyright © 2024 BCN
+          </p>
+
+          <p class="subtitle text-white ms-auto">Designed by CodeMistry</p>
         </div>
       </div>
     </div>
