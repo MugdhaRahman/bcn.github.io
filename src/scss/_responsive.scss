@@ -17,3 +17,38 @@
     }
 
 }
+
+@media(max-width:992px){
+    .big-title{
+        font-size: 2.2em;
+    }
+
+    .title{
+        font-size: 1.75em;
+    }
+
+
+    .b-margin{
+        margin: 0 40px 0 40px !important;
+    }
+    
+    .t-margin{
+        margin: 30px 0 0 0 !important;
+    }
+    
+    .subtitle{
+        font-size: 0.9em;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .link{
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    
+    .subtitle-bold{
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+}
