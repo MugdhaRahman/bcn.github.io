@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Trigger the workflow when pushing to the 'main' branch
+      - main # Trigger the workflow on pushes to the main branch
 
 jobs:
   deploy:
@@ -14,26 +14,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js (optional if you need npm for build tools)
+      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Use an appropriate Node.js version
+          node-version: 18 # Adjust to the Node.js version you need
 
-      # Step 3: Install dependencies (if applicable, e.g., npm or yarn)
-      - name: Install dependencies
+      # Step 3: Install dependencies and build
+      - name: Install dependencies and build
         run: |
-          npm install # Skip this if you don't use Node.js tools
-          # Add additional build steps if needed
+          npm install
+          npm run build # Assumes "build" script is configured in your package.json
 
-      # Step 4: Copy the contents from 'src' to the root directory
-      - name: Copy files to root
-        run: |
-          cp -R src/* ./
-
-      # Step 5: Deploy to GitHub Pages
+      # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Publish the root directory
+          personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          publish_dir: dist # Publish the Webpack output directory
+          
