@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.0.2"
+    "bootstrap": "^5.0.2",
+    "motion": "^11.16.0"
   }
 }
