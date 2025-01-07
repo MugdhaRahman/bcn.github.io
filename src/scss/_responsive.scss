@@ -78,10 +78,119 @@
 }
 
 @media (max-width: 768px) {
+    .big-title {
+        font-size: 2em;
+    }
 
+    .title {
+        font-size: 1.5em;
+    }
 
+    .card-title-bold {
+        font-size: 1.2em;
+    }
+
+    .card-title {
+        font-size: 1em;
+    }
+
+    .b-margin {
+        margin: 0 20px 0 20px !important;
+    }
+
+    .t-margin {
+        margin: 20px 0 0 0 !important;
+    }
+
+    .subtitle {
+        font-size: 0.8em;
+    }
+
+    .link {
+        font-size: 0.8em;
+    }
+
+    .subtitle-bold {
+        font-size: 0.8em;
+    }
+
+    .card-btn {
+        padding: 12px 50px;
+        font-size: 0.65em;
+    }
+
+    .card-btn-secondary {
+        padding: 12px 50px;
+        font-size: 0.65em;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    div.d-flex.flex-column.tab-hidden.hidden-tab {
+        display: none !important;
+    }
 }
 
 @media (max-width: 576px) {
-    
+    .big-title {
+        font-size: 1.8em;
+    }
+
+    .title {
+        font-size: 1.4em;
+    }
+
+    .card-title-bold {
+        font-size: 1em;
+    }
+
+    .card-title {
+        font-size: 0.9em;
+    }
+
+    .b-margin {
+        margin: 0 10px 0 10px !important;
+    }
+
+    .t-margin {
+        margin: 10px 0 0 0 !important;
+    }
+
+    .subtitle {
+        font-size: 0.7em;
+    }
+
+    .link {
+        font-size: 0.7em;
+    }
+
+    .subtitle-bold {
+        font-size: 0.7em;
+    }
+
+    .card-btn {
+        padding: 10px 40px;
+        font-size: 0.6em;
+    }
+
+    .card-btn-secondary {
+        padding: 10px 40px;
+        font-size: 0.6em;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    div.d-flex.flex-column.t-margin.hidden-mobile {
+        display: none !important;
+    }
+
 }
